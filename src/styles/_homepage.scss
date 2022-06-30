@@ -1,0 +1,15 @@
+.hero {
+  position: absolute;
+  top: 0rem;
+
+  &-title {
+    position: relative;
+    z-index: 2;
+    margin-top: 8rem;
+  }
+
+  &-picture {
+    position: absolute;
+    top: 0;
+  }
+}

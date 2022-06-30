@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  padding-top: 3.2rem;
+  z-index: 2;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: auto;
+    }
+  }
+
+  // Style for the menu
+  &-menu {
+    position: relative;
+    background-image: url('../assets/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    width: 2.4rem;
+    height: 1.8rem;
+  }
+  
+  &-menu.active {
+    opacity: 0.5;
+  }
+
+  .menu {
+    display: none;
+  }
+  
+  .menu.active {
+    display: block;
+    position: absolute;
+    top: 8.2rem;
+    left: 2.2rem;
+    right: 2.4rem;
+  }
+
+  // Style for the navbar (desktop)
+  &-nav {
+    display: none;
+  }
+}
