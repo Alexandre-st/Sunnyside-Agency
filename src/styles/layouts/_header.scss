@@ -28,14 +28,56 @@
 
   .menu {
     display: none;
+    position: relative;
+
+    &-background {
+      background-color: #3DBFFF;
+      height: 2.4rem;
+      position: relative;
+      top: -3.9rem;
+
+      span {
+        position: absolute;
+        right: 0;
+        border-bottom: 2.4rem solid #FFFCF8;
+        border-left: 2.4rem solid #0000;
+      }
+    }
   }
   
   .menu.active {
     display: block;
+    background-color: #FFFCF8;
     position: absolute;
+    z-index: 3;
     top: 8.2rem;
     left: 2.2rem;
     right: 2.4rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.142857px;
+    padding: 3.9rem 0;
+    color: #808397;
+
+    li {
+      margin-bottom: 3.2rem;
+
+      &:last-child {
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.107143px;
+        color: #24303E;
+        background-color: #FBD600;
+        width: 14rem;
+        padding: 1.6rem 0 1.5rem 0;
+        border-radius: 2.8rem;
+        margin: auto;
+      }
+    }
   }
 
   // Style for the navbar (desktop)
