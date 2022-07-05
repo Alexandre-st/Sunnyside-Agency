@@ -1,15 +1,87 @@
+// == HERO PART
 .hero {
-  position: absolute;
-  top: 0rem;
+  margin-bottom: -24rem;
 
   &-title {
     position: relative;
     z-index: 1;
     margin-top: 8rem;
+    text-align: center;
+    color: #FFFFFF;
   }
 
   &-picture {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -24rem;
+  }
+}
+
+// == INFOS PART
+.infos {
+  // Fisrt part with the eggs picture
+  &-content {
+    margin: 6.4rem 0;
+    text-align: center;
+
+    p {
+      color: #808397;
+      margin: 2.4rem 0 3.2rem 0;
+    }
+
+    &-link {
+      position: relative;
+      color: #24303E;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      width: 13.7rem;
+      margin: auto;
+
+      // Border for the link
+      .stick {
+        position: absolute;
+        height: 1rem;
+        border-radius: 2.8rem;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        opacity: 0.25;
+        
+        &-yellow {
+          background-color: #FAD400;
+        }
+        
+        &-red {
+          background-color: #FE7766;
+        }
+      }
+    }
+  }
+
+  // Seconde part with the fruits
+  &-fruits {
+
+    &-cherry {
+      margin-bottom: -14.3rem;
+    }
+
+    &-content {
+      position: relative;
+      top: -21rem;
+      text-align: center;
+
+      &-green {
+        color: #24554A;
+      }
+
+      &-blue {
+        color: #19536C;
+      }
+
+      .fruit-text {
+        margin-top: 2.7rem;
+      }
+    }
   }
 }

@@ -38,11 +38,14 @@
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title container">We are creatives</h1>
+        <div class="hero-title container">
+          <h1>We are creatives</h1>
+        </div>
         <picture class="hero-picture">
-          <source srcset="./assets/desktop/image-header.jpg" media="(min-width: 1024px)">
+          <source srcset="./assets/desktop/image-header.jpg" media="(min-width: 768px)">
           <img src="./assets/mobile/image-header.jpg" alt="">
         </picture>
+        <!-- <div class="hero-picture" /> -->
       </section>
       <section class="infos">
         <div class="infos-eggs">
@@ -55,7 +58,10 @@
             <p class="text">
               We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
             </p>
-            <a href="/">Learn more</a>
+            <a class="infos-content-link" href="/">
+              Learn more
+              <span class="stick stick-yellow"></span>
+            </a>
           </div>
         </div>
         <div class="infos-stand">
@@ -68,7 +74,9 @@
             <p class="text">
               Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
             </p>
-            <a href="/">Learn more</a>
+            <a class="infos-content-link" href="/">Learn more
+              <span class="stick stick-red"></span>
+            </a>
           </div>
         </div>
         <div class="infos-fruits">
@@ -77,7 +85,7 @@
               <source srcset="./assets/desktop/image-graphic-design.jpg" media="(min-width: 1024px)">
               <img src="./assets/mobile/image-graphic-design.jpg" alt="Graphic design" />
             </picture>
-            <div class="infos-fruits-content container">
+            <div class="infos-fruits-content infos-fruits-content-green container">
               <h3>Graphic Design</h3>
               <p class="fruit-text">
                 Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
@@ -89,7 +97,7 @@
               <source srcset="./assets/desktop/image-photography.jpg" media="(min-width: 1024px)">
               <img src="./assets/mobile/image-photography.jpg" alt="Photography">
             </picture>
-            <div class="infos-fruits-content container">
+            <div class="infos-fruits-content infos-fruits-content-blue container">
               <h3>Photography</h3>
               <p class="fruit-text">
                 Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
