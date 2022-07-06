@@ -1,4 +1,4 @@
-// == HERO PART
+// == HERO SECTION
 .hero {
   margin-bottom: -24rem;
 
@@ -16,7 +16,7 @@
   }
 }
 
-// == INFOS PART
+// == INFOS SECTION
 .infos {
   // Fisrt part with the eggs picture
   &-content {
@@ -62,7 +62,7 @@
   // Seconde part with the fruits
   &-fruits {
 
-    &-cherry {
+    &-cherry, &-orange {
       margin-bottom: -14.3rem;
     }
 
@@ -83,5 +83,44 @@
         margin-top: 2.7rem;
       }
     }
+  }
+}
+
+// == CLIENTS SECTION
+.clients {
+  margin-top: 6.4rem;
+  text-align: center;
+
+  h4 {
+    color: #A7AAAD;
+  }
+
+  &-infos {
+    margin-top: 6.4rem;
+
+    img {
+      width: 7.2rem;
+      height: 7.2rem;
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    .client-text {
+      color: #5B636D;
+      margin: 3.2rem 0;
+    }
+
+    .job-text {
+      margin-top: -2.4rem;
+    }
+  }
+}
+
+// == IMAGES SECTION
+.images {
+  margin-top: 8.6rem;
+
+  &-top, &-bottom {
+    display: flex;
   }
 }
