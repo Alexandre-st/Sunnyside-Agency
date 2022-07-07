@@ -1,3 +1,5 @@
+@use './variables/mixins' as *;
+
 // == HERO SECTION
 .hero {
   margin-bottom: -24rem;
@@ -19,9 +21,32 @@
 // == INFOS SECTION
 .infos {
   // Fisrt part with the eggs picture
+  @include mq(laptop) {
+    &-eggs, &-stand {
+      display: flex;
+      align-items: center;
+      gap: 7rem;
+
+      @include mq(desktop) {
+        gap: 11rem;
+      }
+    }
+
+    &-eggs {
+      flex-direction: row-reverse;
+    }
+  }
+
   &-content {
     margin: 6.4rem 0;
     text-align: center;
+
+    @include mq(laptop) {
+      max-width: 44.5rem;
+      text-align: left;
+      margin: 0;
+      padding: 2rem;
+    }
 
     p {
       color: #808397;
