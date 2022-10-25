@@ -1,4 +1,4 @@
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
 :root {
   font-size: 10px;
@@ -6,6 +6,8 @@
 
 .container {
   padding: 0 2.4rem;
+  max-width: 144rem;
+  margin: auto;
 
   @include mq(tablet) {
     padding: 0 4.8rem 0 4rem;
@@ -16,3 +18,7 @@
   }
 }
 
+.container-img {
+  max-width: 144rem;
+  margin: auto;
+}
