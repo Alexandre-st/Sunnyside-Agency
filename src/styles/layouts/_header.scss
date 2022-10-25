@@ -1,4 +1,4 @@
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
 .header {
   position: relative;
@@ -16,6 +16,14 @@
     justify-content: space-between;
     align-items: center;
 
+    @include mq(laptop) {
+      padding: 0 4.8rem 0 4rem;
+    }
+
+    @include mq(desktop) {
+      padding: 0;
+    }
+
     img {
       width: auto;
     }
@@ -24,7 +32,7 @@
   // Style for the menu
   &-menu {
     position: relative;
-    background-image: url('../assets/icon-hamburger.svg');
+    background-image: url("../assets/icon-hamburger.svg");
     background-repeat: no-repeat;
     width: 2.4rem;
     height: 1.8rem;
@@ -33,7 +41,7 @@
       display: none;
     }
   }
-  
+
   &-menu.active {
     opacity: 0.5;
   }
@@ -43,7 +51,7 @@
     position: relative;
 
     &-background {
-      background-color: #3DBFFF;
+      background-color: #3dbfff;
       height: 2.4rem;
       position: relative;
       top: -3.9rem;
@@ -51,15 +59,15 @@
       span {
         position: absolute;
         right: 0;
-        border-bottom: 2.4rem solid #FFFCF8;
+        border-bottom: 2.4rem solid #fffcf8;
         border-left: 2.4rem solid #0000;
       }
     }
   }
-  
+
   .menu.active {
     display: block;
-    background-color: #FFFCF8;
+    background-color: #fffcf8;
     position: absolute;
     z-index: 3;
     top: 8.2rem;
@@ -76,14 +84,14 @@
       margin-bottom: 3.2rem;
 
       &:last-child {
-        font-family: 'Fraunces', serif;
+        font-family: "Fraunces", serif;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 15px;
         line-height: 25px;
         letter-spacing: -0.107143px;
-        color: #24303E;
-        background-color: #FBD600;
+        color: #24303e;
+        background-color: #fbd600;
         width: 14rem;
         padding: 1.6rem 0 1.5rem 0;
         border-radius: 2.8rem;
@@ -107,7 +115,13 @@
         font-size: 1.8rem;
         line-height: 2.5rem;
         letter-spacing: -0.128571px;
-        color: #FFFFFF;
+        color: #ffffff;
+
+        &:hover {
+          li {
+            cursor: pointer;
+          }
+        }
       }
 
       &-contact {
@@ -115,25 +129,34 @@
         width: 14rem;
         height: 5.6rem;
         text-align: center;
+        background-color: #ffffff;
+        color: #24303e;
+        border-radius: 2.8rem;
 
-        &::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: #FFFFFF;
-          opacity: 0.25;
-          border-radius: 2.8rem;
+        &:hover {
+          color: #ffffff;
+          background-color: transparent;
+          cursor: pointer;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            opacity: 0.25;
+            border-radius: 2.8rem;
+          }
         }
-        
+
         p {
-          font-weight: 700;
           font-size: 1.5rem;
           line-height: 2.5rem;
+          font-weight: 700;
+          font-family: "Fraunces", serif;
           letter-spacing: -0.107143px;
           text-transform: uppercase;
-          color: #FFFFFF;
           margin-top: 1.6rem;
         }
       }

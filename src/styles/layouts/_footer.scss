@@ -1,22 +1,30 @@
 .footer {
-  background-color: #90D4C6;
+  background-color: #90d4c6;
   padding: 6.4rem 0 8rem 0;
 
   &-img {
     width: 17rem;
     margin: auto;
-    filter: invert(38%) sepia(6%) saturate(3240%) hue-rotate(118deg) brightness(65%) contrast(93%);
+    filter: invert(38%) sepia(6%) saturate(3240%) hue-rotate(118deg)
+      brightness(65%) contrast(93%);
   }
 
   &-link {
     display: flex;
     justify-content: center;
     gap: 5.7rem;
-    color: #458D7E;
+    color: #458d7e;
     font-size: 1.8rem;
     line-height: 2.5rem;
     letter-spacing: -0.128571px;
     margin: 4rem 0 8.8rem 0;
+
+    li {
+      &:hover {
+        color: #fff;
+        cursor: pointer;
+      }
+    }
   }
 
   &-social {
@@ -26,6 +34,11 @@
 
     img {
       width: fit-content;
+
+      &:hover {
+        cursor: pointer;
+        filter: invert(100%) contrast(10);
+      }
     }
   }
 }

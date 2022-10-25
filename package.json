@@ -1,19 +1,30 @@
 {
   "name": "sunnyside-agency",
+  "description": "Sunnyside Agency landing Page",
   "author": "Alexandre-st",
   "version": "1.0.0",
-  "description": "Sunnyside Agency landing Page",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alexandre-st/Sunnyside-Agency"
+  },
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
   "license": "ISC",
+  "keywords": [
+    "PARCEL",
+    "JS",
+    "SASS"
+  ],
   "dependencies": {
     "sass": "^1.53.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.6.2",
+    "@parcel/transformer-sass": "2.7.0",
+    "htmlhint": "^1.1.4",
     "parcel": "^2.6.2"
   }
 }

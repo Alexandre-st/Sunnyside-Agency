@@ -56,23 +56,39 @@
 
     &-link {
       position: relative;
-      color: #24303e;
-      font-size: 1.5rem;
-      line-height: 2.5rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
       width: 13.7rem;
       margin: auto;
+      z-index: 3;
+
+      p {
+        color: #24303e;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: "Fraunces", serif;
+        position: relative;
+        z-index: 3;
+      }
+
+      @include mq(laptop) {
+        margin: 0;
+      }
+
+      &:hover > .stick {
+        opacity: 1;
+      }
 
       // Border for the link
       .stick {
         position: absolute;
         height: 1rem;
         border-radius: 2.8rem;
-        left: 0;
+        left: -9px;
         bottom: 0;
         width: 100%;
         opacity: 0.25;
+        z-index: 1;
 
         &-yellow {
           background-color: #fad400;

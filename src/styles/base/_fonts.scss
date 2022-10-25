@@ -1,12 +1,18 @@
-@use '../variables/mixins' as *;
+@use "../variables/mixins" as *;
 
-h1, h2, h3, h4, h5, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
   font-weight: 900;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
 }
 
-p, li {
-  font-family: 'Barlow', sans-serif;
+p,
+li {
+  font-family: "Barlow", sans-serif;
   font-weight: 600;
 }
 
@@ -19,7 +25,7 @@ h1 {
   @include mq(desktop) {
     font-size: 5.6rem;
     line-height: 6.9rem;
-    letter-spacing: 8.75px
+    letter-spacing: 8.75px;
   }
 }
 
@@ -81,5 +87,5 @@ h5 {
   font-size: 1.4rem;
   line-height: 2.5rem;
   letter-spacing: -0.1px;
-  color: #A7AAAD;
+  color: #a7aaad;
 }
