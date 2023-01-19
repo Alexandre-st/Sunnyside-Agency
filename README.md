@@ -6,7 +6,7 @@ Premium [FrontEnd Mentor](https://www.frontendmentor.io/challenges) Challenge
 
 ## Screenshot
 
-![](/src/assets/Sunnyside_Agency.png)
+![](/src/assets/Sunnyside-Agency.png)
 
 ### Links
 
